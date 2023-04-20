@@ -9,14 +9,26 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  -- {
+  --   "Pocco81/auto-save.nvim",
+  --   lazy = false,
+  --   config = function()
+  --     require("auto-save").setup {
+  --       -- your config goes here
+  --       -- or just leave it empty :)
+  --       trigger_events = { "BufLeave" },
+  --     }
+  --   end,
+  -- },
   {
-    "Pocco81/auto-save.nvim",
-    lazy = false,
+    "catppuccin/nvim",
+    name = "catppuccin",
     config = function()
-      require("auto-save").setup {
-        -- your config goes here
-        -- or just leave it empty :)
-      }
+      require("catppuccin").setup {}
     end,
+  },
+  {
+    'mbbill/undotree',
+    lazy = false
   }
 }
